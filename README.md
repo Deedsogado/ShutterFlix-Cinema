@@ -1,4 +1,4 @@
-# ShutterFlix-Cinema
+# [ShutterFlix-Cinema](http://deedsogado.github.io/ShutterFlix-Cinema)
 
 Team final project for CS 135.
 
