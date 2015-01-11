@@ -1,0 +1,213 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>ShutterFlix Cinema | Now Hiring</title> <!-- Replace "Template" with the name of your page -->
+<meta name="author" content="Ben Cundick">
+<meta name="description" content="A form for applying for a job">
+<meta name="keywords" content="application, hiring, jobs">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<div id="page">
+<div id="film-left">
+	<img src="images/TopLeftReel.png">
+</div> <!-- end film-left div-->
+<div id="film-right">
+	<img src="images/BottomRightReel.png">
+</div> <!-- end film-right div-->
+
+<header>
+	<h1>Shutterflix Cinema</h1>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="locations.html">Locations</a></li>
+		<li><a href="showings.html">Current Showings</a></li>
+		<li><a href="tickets.html">Buy Tickets</a></li>
+		<li><a href="deals.html">Special Deals</a></li>
+		<li><a href="filmfestivals.html">Film Festivals</a></li>
+		<li><a href="concessions.html">Concessions</a></li>
+		<li><a href="nowhiring.html">Now Hiring</a></li>
+	 </ul>
+</nav>
+</header>
+<div id ="content"> 
+<article id="hiring">
+
+	<form method="post" enctype="multipart/form-data" action="mailto:cundickb@ldsbc.edu">
+	<div class = "filmfest"> <!-- filmfest was written by Donald. we are using the same class to fix the margins -RH-->
+		<h3>Personal Information</h3>
+		<p>
+		First Name: 
+		<input class="form" type="text" name="first" pattern="[A-z]*" placeholder="First Name" required>
+		Last Name: 
+		<input class="form" type="text" name="last" pattern="[A-z]*" placeholder="Last Name" required>
+		Middle Initial: 
+		<input class="form" type="text" name="initial" pattern="[A-Z]{1}" style="width: 25px;" placeholder="M">
+		</p>
+		
+		<p>
+		Mailing Address: 
+		<input class="form" type="text" name="address" placeholder="Address" required>
+		City: 
+		<input class="form" type="text" name="city" pattern=".*" placeholder="City" required>
+		State
+		<input class="form" type="text" name="state" style="width: 35px;" pattern="[A-Z]{2}" placeholder="ST" required>
+		</p>
+		
+		<p>
+		Zip Code: 
+		<input class="form" type="text" name="zip" style="width: 55px;" pattern="[0-9]{5}" placeholder="ZIP" required>
+		Home Phone: 
+		<input class="form" type="text" name="home" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Home Phone">
+		Cell Phone: 
+		<input class="form" type="text" name="cell" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Cell Phone">
+		</p>
+		
+		<p>
+		Email: 
+		<input class="form" type="text" name="email">
+		</p>
+	</div>
+	<div class = "filmfest"> <!-- filmfest was written by Donald. we are using the same class to fix the margins -RH-->
+		<hr />
+		<p>
+		Position Being Applied For: 
+		<select class="form" name="position" size="1" required>
+			<option value="manager">Theatre Manager
+			<option value="clerk">Box Office Clerk
+			<option value="usher">Usher
+			<option value="concession">Concession Stand Cashier
+		</select>
+		</p>
+		
+		<p>
+		How did you hear about this position? 
+		<select class="form" name="hear" size="1">
+			<option value="internet">Internet
+			<option value="newspaper">Newspaper
+			<option value="radio">Radio
+			<option value="jobfair">Job Fair
+			<option value="referral">Referral
+			<option value="other">Other
+		</select>
+		</p>
+		
+		<p>
+		Term:
+		<select class="form" name="term" size="1" required>
+			<option value="full">Full-Time
+			<option value="part">Part-Time
+			<option value="temp">Temporary
+		</select>
+		Preferred Start Date:
+		<input class="form" type="date" name="start">
+		</p>
+		
+		<p>
+		What days are you willing to work?
+		</p>
+		
+		<p>
+		<input class="form" type="checkbox" name="mon" value="monday">Monday
+		<input class="form" type="checkbox" name="tue" value="tuesday">Tuesday
+		<input class="form" type="checkbox" name="wed" value="wednesday">Wednesday
+		<input class="form" type="checkbox" name="thu" value="thursday">Thursday
+		<input class="form" type="checkbox" name="fri" value="friday">Friday
+		<input class="form" type="checkbox" name="sat" value="saturday">Saturday
+		<input class="form" type="checkbox" name="sun" value="sunday">Sunday
+		</p>
+		
+	</div>
+	<div class = "filmfest"> <!-- filmfest was written by Donald. we are using the same class to fix the margins -RH-->
+		<hr />
+		
+		<h3>Education and Employment</h3>
+		
+		<p>
+		Highest Level of Education Received: 
+		<select class="form" name="education" size="1" required>
+			<option value="highschool">High School/GED
+			<option value="bttschool">Business/Trade/Technical School
+			<option value="college">College
+		</select>
+		</p>
+		
+		<p><br /></p>
+		
+		<b>Employment History</b>
+		
+		<p><br /></p>
+		
+		<p class="form">Job 1</p>
+		<p>
+		Company Name: 
+		<input class="form" type="text" name="company1">
+		Job Title: 
+		<input class="form" type="text" name="title1">
+		</p>
+		
+		<p>
+		Date Started
+		<input class="form" type="date" name="beginning1">
+		Date Finished
+		<input class="form" type="date"name="finish1">
+		</p>
+		
+		<p class="form">Job 2</p>
+		<p>
+		Company Name: 
+		<input class="form" type="text" name="company2">
+		Job Title: 
+		<input class="form" type="text" name="title2">
+		</p>
+		
+		<p>
+		Date Started
+		<input class="form" type="date" name="beginning2">
+		Date Finished
+		<input class="form" type="date"name="finish2">
+		</p>
+		
+		<p class="form">Job 3</p>
+		<p>
+		Company Name: 
+		<input class="form" type="text" name="company3">
+		Job Title: 
+		<input class="form" type="text" name="title3">
+		</p>
+		
+		<p>
+		Date Started
+		<input class="form" type="date" name="beginning3">
+		Date Finished
+		<input class="form" type="date"name="finish3">
+		</p>
+		
+		<p>
+		Are you currently employed?
+		<input type="radio" name="employed" value="yes">Yes
+		<input type="radio" name="employed" value="no">No
+		</p>
+		
+		<p>
+		Resume: 
+		<input type="file" class="form">
+		</p>
+
+		<input type="submit" value="Submit">
+		
+	</div>
+	</form>
+</article> <!-- Paste your content before this line. -->
+</div><!-- end content div -->
+
+<footer> 
+<small>Copyright &copy; 2014 ShutterFlix Cinema</a> </small>
+</footer>
+</div> <!-- end page div -->
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+/* -----------These are the style for the locations web site-----------
+                   Styles are set per every location
+
+----------------------------------------------------------------------|*/
+div.locationsProvo {                                                 
+
+width: 260px; font-size: 14px; 
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #293741; 
+padding: 10px; float: left
+
+}
+
+div.locationsLasVegas {
+
+width: 280px; font-size: 14px; 
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #293741; 
+padding: 10px; float: left; position:relative
+
+}
+
+div.locationsDenver{
+
+width: 275px; font-size: 14px; 
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #293741; 
+padding: 10px; float: left
+
+}
+
+div.locationsSaltLake{
+
+width: 260px; font-size: 14px; 
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #F5757B; 
+padding: 10px; float: left
+
+}
+
+div.locationsPocatello{
+
+width: 280px; font-size: 14px;
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #F5757B; 
+padding: 10px; float: left
+
+}
+
+div.locationsPhoenix{
+
+width: 275px; font-size: 14px; 
+font-weight: bold; height: 265px; margin: 5px 5px 5px 20px; 
+text-align: center; background-color: #F5757B; 
+padding: 10px; float: left
+
+}                                                              /*|
+-----------------------------------------------------------------|*/
+
+
+
+/*--------These are the styles for the concessions page---------
+
+
+-----------------------------------------------------------------|*/
+div.Concessions{
+
+font-size: 14px; font-weight: bold; margin: 20px;
+text-align: center; padding: 10px
+
+}
+   
+img.picture{
+
+width: 830px; height: 300px
+
+}                                                              /*|
+-----------------------------------------------------------------|*/
+
+
+
+
+
+
+
+
+
+

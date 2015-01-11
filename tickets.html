@@ -1,0 +1,302 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>ShutterFlix Cinema | Buy Tickets</title> <!-- Replace "Template" with the name of your page -->
+	<meta name="author" content="Ben Cundick">
+	<meta name="description" content="Buy tickets online">
+	<meta name="keywords" content="tickets, movie, pay online">
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+ 
+</head>
+<body>
+
+<div id="page">
+<div id="film-left">
+	<img src="images/TopLeftReel.png">
+</div> <!-- end film-left div-->
+<div id="film-right">
+	<img src="images/BottomRightReel.png">
+</div> <!-- end film-right div-->
+
+<header>
+	<h1>Shutterflix Cinema</h1>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="locations.html">Locations</a></li>
+		<li><a href="showings.html">Current Showings</a></li>
+		<li><a href="tickets.html">Buy Tickets</a></li>
+		<li><a href="deals.html">Special Deals</a></li>
+		<li><a href="filmfestivals.html">Film Festivals</a></li>
+		<li><a href="concessions.html">Concessions</a></li>
+		<li><a href="nowhiring.html">Now Hiring</a></li>
+	 </ul>
+</nav>
+</header>
+<div id ="content"> 
+<article id="tickets">
+
+	<form class="ticket" method="post" enctype="text/plain" action="mailto:cundickb@ldsbc.edu">
+	<div id="buytickets">
+		<h3>Buy Tickets</h3>
+		<p>
+		Quantity: 
+		<select class="form" name="quantity" size="1" required>
+			<option value="1">1
+			<option value="2">2
+			<option value="3">3
+			<option value="4">4
+			<option value="5">5
+			<option value="6">6
+			<option value="7">7
+			<option value="8">8
+			<option value="9">9
+			<option value="10">10
+			<option value="11">11
+			<option value="12">12
+			<option value="13">13
+			<option value="14">14
+			<option value="15">15
+			<option value="16">16
+			<option value="17">17
+			<option value="18">18
+			<option value="19">19
+			<option value="20">20
+		</select>
+		</p>
+		
+		<p>
+		Movie: 
+		<select class="form" name="movie" required>
+			<option value="300">300: Rise of an Empire
+			<option value="divergent">Divergent
+			<option value="frozen">Frozen
+			<option value="lego">The Lego Movie
+			<option value="peabody">Mr. Peabody & Sherman
+			<option value="muppets">Muppets Most Wanted
+			<option value="robocop">Robocop
+			<option value="rearwindow">Rear Window
+			<option value="godfather">The Godfather
+			<option value="ghostbusters">Ghost Busters
+		</select>
+		</p>
+		
+		<p>
+		Location: 
+		<select class="form" name="location" required>
+			<option value="provo">Provo
+			<option value="vegas">Las Vegas
+			<option value="denver">Denver
+			<option value="saltlake">Salt Lake City
+			<option value="pocatello">Pocatello
+		</select>
+		</p>
+		
+		<p>
+		Showing: 
+		<input class="form" type="time" name="showing" min="12:00" max="23:00" step="3600" required>
+		</select>
+		</p>
+	</div>
+	
+	<div id="payment">
+		<h3>Credit Card Information</h3>
+		
+		<p>
+		Name: 
+		<input class="form" type="text" name="name" placeholder="Your name" pattern=".*" required>
+		</p>
+		
+		<p>
+		Credit Card Type: 
+		<select class="form" name="card" size="1" required>
+			<option value="visa">Visa
+			<option value="mastercard">Master Card
+			<option value="americanexpress">American Express
+			<option value="discover">Discover
+		</select>
+		</p>
+		
+		<p>
+		Credit Card Number: 
+		<input class="form" type="text" name="cardnumber" required>
+		</p>
+		
+		<p>
+		Expiration Date: 
+		<select class="form" name="month" size="1" required>
+			<option value="jan">Jan
+			<option value="feb">Feb
+			<option value="mar">Mar
+			<option value="apr">Apr
+			<option value="may">May
+			<option value="jun">Jun
+			<option value="jul">Jul
+			<option value="aug">Aug
+			<option value="sep">Sep
+			<option value="oct">Oct
+			<option value="nov">Nov
+			<option value="dec">Dec
+		</select>
+		
+		<select class="form" name="quantity" size="1" required>
+			<option value="2014">2014
+			<option value="2015">2015
+			<option value="2016">2016
+			<option value="2017">2017
+			<option value="2018">2018
+			<option value="2019">2019
+			<option value="2020">2020
+			<option value="2021">2021
+			<option value="2022">2022
+			<option value="2023">2023
+			<option value="2024">2024
+		<select>
+		</p>
+	</div>
+	
+	<div id="seats">
+		<h3>Pick Your Seats</h3>
+		<table>
+			<caption>Front</caption>
+			<tr>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="empty"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="empty"></td>
+			</tr>
+			<tr>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+			</tr>
+			<tr>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+				<td class="seat"></td>
+			</tr>
+		</table>
+		
+		<br />
+		
+		<p>
+		<input type="submit" value="Purchase">
+		<input type="reset" value="Cancel">
+		</p>
+		<br>
+		<br>
+	</div>
+	</form>
+</article> <!-- Paste your content before this line. -->
+</div><!-- end content div -->
+
+<footer> 
+<small>Copyright &copy; 2014 ShutterFlix Cinema</a> </small>
+</footer>
+</div> <!-- end page div -->
+
+
+</body>
+</html>

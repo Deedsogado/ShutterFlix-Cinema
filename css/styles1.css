@@ -1,0 +1,252 @@
+* { /* Zero out all margins and padding to override browser defaults -RH*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	min-height: 100%; /* to make the footer stay at bottom in all browsers -RH*/
+}
+
+#page {
+	width: 1008px; /* width of pagefilm.png * 2, plus 960 -RH*/
+	margin: auto;
+	background-color: #c6c6c6; /* This controls the background color for the article and content, which can't have their own. Once an offical color sceme is decided, reel.png needs to be updated to match. -RH*/
+	min-height: 100%; /* the footer staying on the bottom depends on this -RH*/
+	position: relative;
+}
+
+
+/* uncomment this to make film left move when you scroll */
+#film-left {
+	background: black url(../images/pagefilm.png);
+	width: 24px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+/* uncomment this to make film left stay put when you scroll */
+/*
+#film-left {
+	background: black url(../images/pagefilm.png);
+	width: 24px;
+	height: 100%;
+	position: fixed;
+	left: 50%;
+	margin-left: -504px;
+} */
+
+#film-left img {
+	width: 166px;
+	height: 152px;
+	z-index: 1005;
+	position: fixed;
+	margin-left: -5px;
+	margin-top:-2px;
+}
+
+/* this controls the film on the right side. -RH*/
+#film-right {
+	background: black url(../images/pagefilm.png); 
+	width: 24px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+}
+
+#film-right img {
+	width: 166px;
+	height: 152px;
+	z-index: 1005;
+	position: absolute;
+	bottom: 0;
+	right: -2px;
+}
+
+#content {
+	width: 960px;
+	margin: auto; /* Centers content on page -RH*/
+	padding-top: 176px; /* height of the header -RH*/
+	z-index: 25;
+	overflow: auto;
+}
+
+header {
+	background: url(../images/ShutterFlixBannerLight.jpg) no-repeat;
+	width: 960px; /* set background as the banner to aoivd having to type in the <img src> to every html page. -RH*/
+	height: 176px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -480px;
+	position: fixed;
+	z-index: 1000; /* must be the highest on page. label others below 95, if needed */
+}
+
+header h1 {
+	Color: white;
+	padding-top: 56px;
+	padding-left: 440px;
+	padding-bottom: 36px;
+	font-family: Algerian, Times, serif;
+	font-size: 44px;
+	height: 57px; /** one less than it should be to prevent exposing any gaps at odd number zoom levels -RH*/
+}
+
+nav{
+	height: 26px;
+	background-color: purple; /* Testing purposes only. -RH*/
+}
+
+nav ul {
+	padding: 5px; 
+	list-style-type: none; /* Turns off the bullets -RH*/
+	text-align: center; /* Centers nav bar on page, not the text inside -RH*/
+	background-color: #000; /* change as desired*/
+}
+
+nav ul li {
+	display: inline; /* makes nav bar horizontal -RH*/
+}
+
+nav ul li a {
+	text-decoration: none; /* turns off the link's underline -RH*/
+	padding: 3px 14px; /* gives the link space inside it's individual block */
+	color: #fff; /* change as desired*/
+	background-color: #000; /* change as desired*/
+}
+
+nav li a:visited {
+	color: green; /* change as desired*/
+}
+
+nav li a:hover {
+	color: #300; /* change as desired*/
+}
+
+nav li a:active{
+	color: red; /* change as desired*/
+}
+
+article {
+	padding-bottom: 176px; /* Height of footer. important so the article doesn't get hidden behind the footer. must be at least 152px -RH*/
+	width: 960px; 
+}
+
+article#home {
+	width: 910px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+article#deals {
+	width: 910px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+article#tickets {
+	width: 910px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+article#hiring {
+	width: 910px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+#deals table {
+  width: 100%;
+  margin: 10px auto;
+  border: solid 3px black;
+  border-collapse: collapse;
+  background-color: #e9dfc6;
+}
+
+#deals caption {
+  padding: 4px;
+  color: white;
+  background-color: maroon;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#deals td {
+  padding: 6px;
+  border: solid 1px black;
+}
+
+#deals tr.stripe {
+  background-color: orange;
+}
+
+#deals tr:hover {
+  color: white;
+  background-color: black;
+}
+
+#deals tr.stripe :hover {
+  color: white;
+  background-color: black;
+}
+
+div#buytickets {
+        position: relative;
+        top: 0px;
+        left: 25px;
+}
+
+div#seats {
+        position: relative;
+        top: -150px;
+        left: 18px;
+}
+
+div#payment {
+        position: relative;
+        top: -190px;
+        left: 370px;
+}
+
+td.seat {
+		width: 35px;
+		height: 35px;
+		background-color: #999999;
+}
+td.empty {
+		width: 35px;
+		height: 35px;
+}
+.seat:hover {
+		background-color: #6B6B6B;
+}
+.red {
+		background-color: red;
+}
+
+
+.form {
+        margin: 10px;
+}
+
+footer { /* stays on the bottom of the webpage, but is hidden when you scroll up enough.*/
+	width: 960px;
+	height: 150px;
+	position: absolute; 
+	bottom: 0;
+	left: 50%;
+	margin-left: -480px;
+	/*background: green url(../photos/footer.png) bottom no-repeat;*/
+	/* Haven't made the footer img yet. this is placeholder. -RH*/
+	z-index: 995; /* needs to be less than 100 to not overlap the header -RH*/
+}
+
+a:link, a:visited {
+	color: #633; /* change as desired */
+}
+
+a:hover {
+	color: #966; /* change as desired */
+}
